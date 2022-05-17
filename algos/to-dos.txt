@@ -1,0 +1,5 @@
+quicksort
+merge sort
+binary search
+depth-first search
+breadth-first search

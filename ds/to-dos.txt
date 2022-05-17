@@ -1,0 +1,10 @@
+hash tables
+hash maps
+linked lists
+stacks
+queues
+trees
+heaps
+tries
+graphs
+vectors
