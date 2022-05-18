@@ -1,5 +1,13 @@
-quicksort
-merge sort
-binary search
+sorting:
+    quicksort
+    merge sort
+binary search: useful if input array is sorted and
+    need to do faster than O(n) searches
 depth-first search
 breadth-first search
+
+sliding window
+2 pointers
+union find
+traverse from the back
+topological sorting

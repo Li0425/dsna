@@ -83,6 +83,8 @@ Circular linked lists: singly linked list where the last node
 """
 
 
-""" Coding problems
+""" Coding problems done
 - Reverse linked list
+- Detect cycle in a linked list
+- Merge 2 sorted linked lists
 """

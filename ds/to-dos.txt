@@ -1,10 +1,20 @@
-hash tables
-hash maps
+hash tables: most lookup operations should be O(1) with it
+hash maps: useful for making lookup efficient. The most common
+    data structure used in interviews. You are guaranteed to have to use it
+
 linked lists
-stacks
-queues
-trees
-heaps
-tries
-graphs
+
+stacks & queues: if you need to parse a string with nested
+    properties (e.g. math equation), you'll almost definitely need stacks
+
+trees / tries: Do you need to store strings in a space-efficient manner
+    and  look for the existence of strings (or part of them) very quickly?
+
+heaps: Question involves scheduling/ordering based on some priority. 
+    Also useful for finding the max K/min K/median elements in a set.
+
+graphs: if data is presented as associations between entities, might
+    be able to model the question as a graph and use some common
+    graph algorithms to solve it
+
 vectors
