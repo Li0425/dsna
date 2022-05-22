@@ -3,33 +3,39 @@ class Node:
         self.value = val
         self.left = None
         self.right = None
-
+    
     def insert(self, data):
-        if self.value == data:
-            return False # duplicates not allowed in tree
-        elif self.value > data:
+        if data == self.value:
+            return False # not allowing duplicates
+        elif data < self.value:
             if self.left:
                 return self.left.insert(data)
             else:
                 self.left = Node(data)
+                # I forgot return True
                 return True
         else:
             if self.right:
                 return self.right.insert(data)
             else:
                 self.right = Node(data)
+                # forgot to return
                 return True
-
+    
     def find(self, data):
-        if self.value == data:
+        if data == self.value:
             return True
-        elif self.value > data:
+        elif data < self.value:
             if self.left:
+                # I forgot to return
+                # self.left.find(data)
                 return self.left.find(data)
             else:
                 return False
         else:
             if self.right:
+                # I forgot to return
+                # self.right.find(data)
                 return self.right.find(data)
             else:
                 return False
@@ -57,23 +63,25 @@ class Node:
             print(str(self.value))
             if self.right:
                 self.right.inorder()
+        
 
 class Tree:
     def __init__(self) -> None:
         self.root = None
     
     def insert(self, data):
-        if self.root:
-            return self.root.insert(data)
-        else: 
+        if not self.root:
+            # Forgot to return
             self.root = Node(data)
             return True
+        else:
+            return self.root.insert(data)
     
     def find(self, data):
-        if self.root:
-            return self.root.find(data)
-        else: 
+        if not self.root:
             return False
+        else:
+            return self.root.find(data)
     
     def preorder(self):
         print("PreOrder")
@@ -82,7 +90,7 @@ class Tree:
     def postorder(self):
         print("PostOrder")
         self.root.postorder()
-
+    
     def inorder(self):
         print("InOrder")
         self.root.inorder()
