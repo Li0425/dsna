@@ -18,7 +18,8 @@ def bfs(matrix):
                 visited.add((curr_i, curr_j))
                 for dir in directions:
                     next_i, next_j = curr_i+dir[0], curr_j+dir[1]
-                    if 0 <= next_i <= rows and 0 <= next_j <= cols:
+                    if 0 <= next_i < rows and 0 <= next_j < cols:
+                        # Add in question-specific checks, where relevant.
                         queue.append((next_i, next_j))
 
     for i in range(rows):

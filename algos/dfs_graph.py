@@ -14,7 +14,8 @@ def dfs(matrix):
 
         for dir in directions:
             next_i, next_j = i+dir[0], j+dir[i]
-            if 0 <= next_i <= rows and 0 <= next_j <= cols:
+            if 0 <= next_i < rows and 0 <= next_j < cols:
+                # Add in question-specific checks, where relevant.
                 traverse(next_i, next_j)
 
     for i in range(rows):
