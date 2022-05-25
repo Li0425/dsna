@@ -4,7 +4,7 @@ from collections import deque
 
 def bfs(matrix):
     if not matrix:
-        return
+        return []
 
     rows, cols = len(matrix), len(matrix[0])
     visited = set()
