@@ -4,4 +4,4 @@ Data structure and algorithms.
 
 Coding problems.
 
-Main references: https://www.techinterviewhandbook.org/
+Main reference: https://www.techinterviewhandbook.org/
